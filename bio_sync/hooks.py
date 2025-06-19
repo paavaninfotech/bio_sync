@@ -242,3 +242,8 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+scheduler_events = {
+    "cron": {
+        "*/5 * * * *": ["bio_sync.sync.auto_sync.run_scheduled_sync"]
+    }
+}

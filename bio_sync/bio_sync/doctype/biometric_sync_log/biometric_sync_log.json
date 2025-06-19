@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-19 14:15:23.476760",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "biometric_db",
+  "failed_on",
+  "reason",
+  "row_json"
+ ],
+ "fields": [
+  {
+   "fieldname": "biometric_db",
+   "fieldtype": "Link",
+   "label": "Biometric DB Ref",
+   "options": "Biometric DB Settings"
+  },
+  {
+   "fieldname": "failed_on",
+   "fieldtype": "Datetime",
+   "label": "Failed On"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "row_json",
+   "fieldtype": "Long Text",
+   "label": "Row Data (JSON)",
+   "options": "frappe.as_json(row)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-19 14:20:32.046491",
+ "modified_by": "Administrator",
+ "module": "Bio Sync",
+ "name": "Biometric Sync Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

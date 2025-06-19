@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2025-06-19 15:49:41.854535",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "db_type",
+  "db_host",
+  "db_port",
+  "db_user",
+  "db_password",
+  "db_name",
+  "tab_2_tab",
+  "sql_query",
+  "section_break_zjrd",
+  "user_id_field",
+  "check_time_field",
+  "log_type_field",
+  "device_id_field",
+  "column_break_xryb",
+  "last_sync_time",
+  "sync_frequency",
+  "auto_sync_enabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "db_type",
+   "fieldtype": "Select",
+   "label": "DB Type",
+   "options": "MySQL\nPostgreSQL"
+  },
+  {
+   "fieldname": "db_host",
+   "fieldtype": "Data",
+   "label": "Host"
+  },
+  {
+   "fieldname": "db_port",
+   "fieldtype": "Int",
+   "label": "Port"
+  },
+  {
+   "fieldname": "db_user",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "db_password",
+   "fieldtype": "Password",
+   "label": "Password"
+  },
+  {
+   "fieldname": "db_name",
+   "fieldtype": "Data",
+   "label": "DB Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data Mapping"
+  },
+  {
+   "fieldname": "sql_query",
+   "fieldtype": "Long Text",
+   "label": "SQL Query"
+  },
+  {
+   "fieldname": "user_id_field",
+   "fieldtype": "Data",
+   "label": "USER ID Column"
+  },
+  {
+   "fieldname": "check_time_field",
+   "fieldtype": "Data",
+   "label": "Check Time Column"
+  },
+  {
+   "fieldname": "log_type_field",
+   "fieldtype": "Data",
+   "label": "Log Type Column"
+  },
+  {
+   "fieldname": "device_id_field",
+   "fieldtype": "Data",
+   "label": "Location/Device ID Column"
+  },
+  {
+   "fieldname": "sync_frequency",
+   "fieldtype": "Select",
+   "label": "Sync Frequency (in Minutes)",
+   "options": "5\n10\n15\n30\n60"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_sync_enabled",
+   "fieldtype": "Check",
+   "label": "Auto Sync Enabled"
+  },
+  {
+   "fieldname": "section_break_zjrd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xryb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_sync_time",
+   "fieldtype": "Datetime",
+   "label": "Last Sync Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-19 16:21:01.071630",
+ "modified_by": "Administrator",
+ "module": "Bio Sync",
+ "name": "Biometric DB Settings",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
