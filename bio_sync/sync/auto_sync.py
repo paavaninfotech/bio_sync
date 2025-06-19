@@ -18,4 +18,4 @@ def run_scheduled_sync():
                 sync_now(db.name)
 
         except Exception as e:
-            frappe.log_error(f"Auto Sync Error: {str(e)}", title=f"Biometric Auto Sync - {db.name}")
+            frappe.log_error(f"Auto Sync Error: {str(e)}", f"Biometric Auto Sync - {db['name']}")
