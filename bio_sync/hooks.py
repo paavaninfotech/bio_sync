@@ -255,3 +255,8 @@ scheduler_events = {
         ]
     }
 }
+
+website_route_rules = [
+    {"from_route": "/terms-of-service", "to_route": "terms-of-service"},
+    {"from_route": "/privacy-policy", "to_route": "privacy-policy"},
+]

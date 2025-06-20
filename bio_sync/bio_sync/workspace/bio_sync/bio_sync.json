@@ -53,7 +53,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-06-20 04:56:44.475313",
+ "modified": "2025-06-20 05:17:02.051578",
  "modified_by": "Administrator",
  "module": "Bio Sync",
  "name": "Bio Sync",
@@ -80,7 +80,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 29.0,
+ "sequence_id": 1.0,
  "shortcuts": [],
  "title": "Bio Sync"
 }
