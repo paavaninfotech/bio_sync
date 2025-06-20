@@ -55,11 +55,25 @@ def sync_now(name):
                 log_sync_failure(doc.name, "Missing employee ID or check time", row)
                 continue
 
-            employee = frappe.db.get_value("Employee", { "attendance_device_id": emp_id })
-            if not employee:
-                log_sync_failure(doc.name, f"No employee found for attendance_device_id: {emp_id}", row)
-                skipped += 1
-                continue
+            employee_data = frappe.db.get_value(
+                    "Employee",
+                {"biometric_id": emp_id},
+                ["name", "status"],
+                as_dict=True
+                    )
+
+            if not employee_data:
+            log_sync_failure(doc.name, f"No employee found for biometric_id: {emp_id}", row)
+            skipped += 1
+            continue
+
+            if employee_data.status != "Active":
+            log_sync_failure(doc.name, f"Employee {employee_data.name} is inactive", row)
+            skipped += 1
+            continue
+
+            employee = employee_data.name
+
 
             # Avoid duplicate entries
             if not frappe.db.exists("Employee Checkin", {"employee": employee, "time": check_time}):
