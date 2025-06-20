@@ -22,7 +22,8 @@
   "column_break_xryb",
   "last_sync_time",
   "sync_frequency",
-  "auto_sync_enabled"
+  "auto_sync_enabled",
+  "log_retention_days"
  ],
  "fields": [
   {
@@ -111,11 +112,17 @@
    "fieldname": "last_sync_time",
    "fieldtype": "Datetime",
    "label": "Last Sync Time"
+  },
+  {
+   "default": "30",
+   "fieldname": "log_retention_days",
+   "fieldtype": "Int",
+   "label": "Log Retention (Days)"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-19 16:21:01.071630",
+ "modified": "2025-06-20 08:30:06.601654",
  "modified_by": "Administrator",
  "module": "Bio Sync",
  "name": "Biometric DB Settings",

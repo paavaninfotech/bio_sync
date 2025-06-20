@@ -247,3 +247,11 @@ scheduler_events = {
         "*/5 * * * *": ["bio_sync.sync.auto_sync.run_scheduled_sync"]
     }
 }
+
+scheduler_events = {
+    "cron": {
+        "0 1 * * *": [  # Daily at 1 AM
+            "bio_sync.sync.cleanup.delete_old_logs"
+        ]
+    }
+}

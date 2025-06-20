@@ -1,0 +1,86 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"Qlokl8kGfi\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Bio Sync</span>\",\"col\":12}},{\"id\":\"HN7M4wqyOX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u2705 Successful Check-ins (Today)\",\"col\":3}},{\"id\":\"2EyERsXkhB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u274c Failed Sync Logs (Today)\",\"col\":3}},{\"id\":\"LSydZ-DACJ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\ud83d\udd27 Total Biometric DB Configs\",\"col\":3}},{\"id\":\"5JmfNQuXqN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\ud83d\udc64 Active Employees Mapped\",\"col\":3}},{\"id\":\"FOxWP4mp_A\",\"type\":\"card\",\"data\":{\"card_name\":\"Bio Sync\",\"col\":4}}]",
+ "creation": "2025-06-20 08:41:55.086157",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "integration",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Bio Sync",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bio Sync",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Biometric DB Settings",
+   "link_count": 0,
+   "link_to": "Biometric DB Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Biometric Sync Log",
+   "link_count": 0,
+   "link_to": "Biometric Sync Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Checkin",
+   "link_count": 0,
+   "link_to": "Employee Checkin",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-06-20 04:56:44.475313",
+ "modified_by": "Administrator",
+ "module": "Bio Sync",
+ "name": "Bio Sync",
+ "number_cards": [
+  {
+   "label": "\u2705 Successful Check-ins (Today)",
+   "number_card_name": "Successful Check-ins (Today)"
+  },
+  {
+   "label": "\u274c Failed Sync Logs (Today)",
+   "number_card_name": "Failed Sync Logs (Today)"
+  },
+  {
+   "label": "\ud83d\udd27 Total Biometric DB Configs",
+   "number_card_name": "Total Biometric DB Configs"
+  },
+  {
+   "label": "\ud83d\udc64 Active Employees Mapped",
+   "number_card_name": "Active Employees Mapped"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 29.0,
+ "shortcuts": [],
+ "title": "Bio Sync"
+}
