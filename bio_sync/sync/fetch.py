@@ -57,13 +57,13 @@ def sync_now(name):
 
             employee_data = frappe.db.get_value(
                 "Employee",
-                {"biometric_id": emp_id},
+                {"attendance_device_id": emp_id},
                 ["name", "status"],
                 as_dict=True
             )
 
             if not employee_data:
-                log_sync_failure(doc.name, f"No employee found for biometric_id: {emp_id}", row)
+                log_sync_failure(doc.name, f"No employee found for attendance_device_id: {emp_id}", row)
                 skipped += 1
                 continue
 
